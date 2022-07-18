@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kanban Application</title>
+</head>
+<body>
+    <h1>Welcome to Kanban Application</h1>
+    <br>
+    <h2>Register Here</h2>
+    <br>
+    <br>
+    <form name="register" method="post" action="/register">
+        <p><br>  
+            {% if error %}
+            <p id="error_txt">{{ error }}</p>
+            {% endif %}            
+        <br></p>
+        <h3>Enter username:</h3>
+        <br>
+        <input type="text" name="username" id="txtbox">
+        <br>
+        <h3>Enter password:</h3>
+        <input type="password" name="password" id="txtbox">
+        <br>
+        <input type="submit" value="Register">
+    </form>
+    <br>
+    <br>
+    
+</body>
+</html>
